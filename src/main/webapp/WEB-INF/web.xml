@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Test</display-name>
+  
+  <!-- 예제1 -->
+  <servlet>
+  	<servlet-name>UrlMappingEx01</servlet-name>   <!--이것은 아무거나해도된다 -->
+  	<servlet-class>com.test.lesson01.UrlMappingEx01</servlet-class> <!-- 이것은 꼭 확인해서 넣어야됨-->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UrlMappingEx01</servlet-name> <!--이것은 아무거나해도된다 -->
+  	<url-pattern>/lesson01/ex01</url-pattern> <!--내가브라우져에 치고들어가는 것 매우중요함 -->
+  </servlet-mapping>
+  
+    <!-- Quiz01 --> <!-- servlet 코드아래 것은 외우지 말고 그냥 복사해서 사용해도 된다 -->
+  <servlet>
+  	<servlet-name>UrlMappingQuiz01</servlet-name>  <!-- Class이름 복사해온다 -->
+  	<servlet-class>com.test.lesson01.UrlMappingQuiz01</servlet-class> <!-- 반드시 Ctrl 눌러서 클래스 확인한다 -->
+  	<!-- url이 중복되면 서버가 ON이 되지 않거나 작동을 잘 하지 않는다, 서버안켜지면 Console에 확인할 것 -->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UrlMappingQuiz01</servlet-name> 
+  	<url-pattern>/lesson01/quiz01</url-pattern>  <!--내가브라우져에 치고들어가는 것 매우중요함, //http://localhost/lesson01/quiz02 -->
+  </servlet-mapping>
+  
+      <!-- Quiz02 -->
+  <servlet>
+  	<servlet-name>UrlMappingQuiz02</servlet-name>  
+  	<servlet-class>com.test.lesson01.UrlMappingQuiz02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UrlMappingQuiz02</servlet-name> 
+  	<url-pattern>/lesson01/quiz02</url-pattern>
+  </servlet-mapping>
+</web-app>
