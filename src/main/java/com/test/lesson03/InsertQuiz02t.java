@@ -33,6 +33,6 @@ public class InsertQuiz02t extends HttpServlet {
 		mysqlService.disconnect(); // DB 해제
 		
 		// 목록 화면 이동
-		response.sendRedirect("/lesson03/quiz02t/bookmarkList.jsp");
+		response.sendRedirect("/lesson03/quiz02t.jsp");
 	}
 }

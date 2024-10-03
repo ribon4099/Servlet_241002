@@ -11,10 +11,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
 <body>
-<%= 파일명: bookmark_add.jsp =%>
+<!--< %= 파일명: bookmark_list.jsp =%> : 답지에 있으나 에러 발생하여 내가 주석처리-->
 	<div class="container">
 		<h1>즐겨찾기 추가</h1>
-		<form method="post" action="/lesson04/quiz02_insert">
+		<form method="post" action="/lesson03/quiz02t_insert">
 			<label for="name" class="w-25">사이트명: <input type="text" class="form-control" name="name" id="name"></label><br>
 			<label for="url" class="w-50">사이트 주소: <input type="text" class="form-control" name="url" id="url"></label>
 			
