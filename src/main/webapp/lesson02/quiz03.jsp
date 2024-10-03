@@ -28,11 +28,11 @@
 
 		<form method="post" action="/lesson02/quiz03_1.jsp">
 			<div class="d-flex">
-			<input type="text" class="form-control col-4" name="height"
+			<input type="text" class="form-control col-4 mr-1" name="height"
 				placeholder="키를 입력하세요.">
 			<input type="text" class="form-control col-4" name="weight"
 				placeholder="몸무게를 입력하세요.">
-			<input type="submit" class="btn btn-info" value="계산">
+			<input type="submit" class="btn btn-info ml-1" value="계산">
 			</div>
 		</form>
 </div>

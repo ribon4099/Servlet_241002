@@ -56,20 +56,20 @@ list.add(map);
 			<tbody>
 			<%
 			String keyword = request.getParameter("keyword");
-			String filter = request.getParameter("starPointFilter");
-			boolean exclude = filter != null; // true: 제외(체크됨)
+			String starPointFilter = request.getParameter("starPointFilter");
+			boolean exclude = starPointFilter != null; // true: 제외(체크됨)
 			
 			for (Map<String, Object> item : list) {	
 				if (keyword.equals(item.get("menu"))) {
 					// skip 조건: 체크가 되어 있고, 4.0 이하인 조건 => 출력 X
-					if (exclude && (double)item.get("point") <= 4.0) {
+					if (exclude && (double) item.get("point") <= 4.0) {
 						continue;
 					}
 				
 			%>
 			
 				<tr>
-					<td><%= filter %> ::: <%= item.get("menu") %></td>
+					<td><%= item.get("menu")%></td>
 					<td><%= item.get("name")%></td>
 					<td><%= item.get("point")%></td>
 				</tr>
