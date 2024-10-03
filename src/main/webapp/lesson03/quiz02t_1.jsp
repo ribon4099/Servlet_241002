@@ -14,7 +14,7 @@
 <%= 파일명: bookmark_add.jsp =%>
 	<div class="container">
 		<h1>즐겨찾기 추가</h1>
-		<form method="post" action="/lesson03/quiz02t_insert">
+		<form method="post" action="/lesson04/quiz02_insert">
 			<label for="name" class="w-25">사이트명: <input type="text" class="form-control" name="name" id="name"></label><br>
 			<label for="url" class="w-50">사이트 주소: <input type="text" class="form-control" name="url" id="url"></label>
 			
