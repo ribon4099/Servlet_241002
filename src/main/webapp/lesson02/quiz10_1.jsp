@@ -131,7 +131,6 @@
 		}
 	}
 	
-	out.print(target);
 
 %>
 	<div class="container">
